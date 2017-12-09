@@ -18,7 +18,7 @@ var filterFamilyMembers = function (familyTree, truthTest) {
   	//recurse through all children and save family name array data
   	familyName = familyName.concat(filterFamilyMembers(childArr[i], truthTest));
   }
-	//return array
+
   return familyName;
 };
 
