@@ -5,7 +5,7 @@ You will need to use recursion in your solution in order to handle nested familt
 */
 
 var filterFamilyMembers = function (familyTree, truthTest) {
-	//create array to store family names
+  //create array to store family names
   var familyName = [];
   //if family member passes truthTest
   if (truthTest(familyTree)) {
