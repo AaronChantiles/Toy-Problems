@@ -24,10 +24,11 @@ var evenOccurrence = function(arr) {
 	for (var i = 0; i < arr.length; i++) {
 		//if element occurs an even amount of times
 		if (obj[arr[i]] % 2 === 0) { 
-			return arr[i]; }
+			return arr[i]; 
+    }
 	}
 	return null;
 };
 
 
-evenOccurrence([6, 'meow', 1, 7, 2, 'meow', 4, 5, 6, 8, 9, 6, 4]);
+evenOccurrence([6, 'meow', 1, 7, 2, 'meow', 4, 5, 6, 'food', 9, 6, 4]);
