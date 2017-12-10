@@ -25,10 +25,10 @@ var evenOccurrence = function(arr) {
 		//if element occurs an even amount of times
 		if (obj[arr[i]] % 2 === 0) { 
 			return arr[i]; 
-    }
+		}
 	}
 	return null;
 };
 
 
-evenOccurrence([6, 'meow', 1, 7, 2, 'meow', 4, 5, 6, 'food', 9, 6, 4]);
+evenOccurrence([['food'], 3, 'meow', 1, 7, 2, 'meow', 4, 5, 6, ['array'], 9, 6, 4]);
