@@ -30,5 +30,4 @@ var evenOccurrence = function(arr) {
 	return null;
 };
 
-
 evenOccurrence([['food'], 3, 'meow', 1, 7, 2, 'meow', 4, 5, 6, ['array'], 9, 6, 4]);
