@@ -25,17 +25,17 @@ var rockPaperScissors = function (numOfRounds) {
   //inner function (roundsLeft and result)
   var combinations = function(roundsLeft, result) {
 
-  	if (roundsLeft === 0) {
-  	//if Rounds left is 0 push result to outcomes
-  	outcomes.push(result);
-  	return;
-  	}
+    if (roundsLeft === 0) {
+      //if Rounds left is 0 push result to outcomes
+      outcomes.push(result);
+      return;
+    }
   		
-  	//iterate through moves array
-  	moves.forEach(move => {	
-  		//Recursion (roundsLeft - 1 and concat result with move)
-  		combinations(roundsLeft-1, result.concat(move));
-  	});
+    //iterate through moves array
+    moves.forEach(move => {	
+      //Recursion (roundsLeft - 1 and concat result with move)
+      combinations(roundsLeft-1, result.concat(move));
+    });
   }
 
   //invoke inner function (numOfRounds & empty array)
