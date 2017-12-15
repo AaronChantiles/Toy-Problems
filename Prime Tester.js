@@ -9,15 +9,15 @@ var primeTester = function(n) {
     // n isn't a number or n is less than 1 or n is not an integer
     return false;
   }
-  if (n % 2 === 0) { 
-  	return false; 
+  if (n % 2 === 0) {
+    return false; 
   }
   var num = 3;
   while (num < parseInt(n/2)) {
-  	if (n % num === 0) { 
-  	  return false; 
-  	}
-  	num++;
+    if (n % num === 0) { 
+      return false; 
+    }
+    num++;
   }
   return true;
 };
@@ -43,9 +43,9 @@ var primeSieve = function (start, end) {
 
   while (startNum !== endNum + 1) {
     if (primeTester(startNum)) {
-	  primeArr.push(startNum);
-	}
-	startNum++;
+      primeArr.push(startNum);
+    }
+    startNum++;
   }
   return primeArr;
 };
